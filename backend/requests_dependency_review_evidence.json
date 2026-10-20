@@ -1,0 +1,26 @@
+{
+  "package": "requests",
+  "version": "2.32.5",
+  "metadata_source": "https://pypi.org/pypi/requests/2.32.5/json",
+  "wheel": {
+    "filename": "requests-2.32.5-py3-none-any.whl",
+    "url": "https://files.pythonhosted.org/packages/1e/db/4254e3eabe8020b458f1a747140d32277ec7a271daf1d235b70dc0b4e6e3/requests-2.32.5-py3-none-any.whl",
+    "bytes": 64738,
+    "sha256": "2462f94637a34fd532264295e186976db0f5d453d1cdd31473c85a6a161affb6",
+    "matches_pypi_digest": true
+  },
+  "requires_python": ">=3.9",
+  "requires_dist": [
+    "charset_normalizer<4,>=2",
+    "idna<4,>=2.5",
+    "urllib3<3,>=1.21.1",
+    "certifi>=2017.4.17",
+    "PySocks!=1.5.7,>=1.5.6; extra == \"socks\"",
+    "chardet<6,>=3.0.2; extra == \"use-chardet-on-py3\""
+  ],
+  "transitive_dependencies_resolved": false,
+  "dependency_image_verified": false,
+  "package_installed": false,
+  "package_code_executed": false,
+  "repository_execution_enabled": false
+}

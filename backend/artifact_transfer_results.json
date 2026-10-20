@@ -1,0 +1,21 @@
+{
+  "status": "synthetic_transfer_passed",
+  "repository_execution_enabled": false,
+  "source_executed": false,
+  "cleanup_verified": true,
+  "image_id": "sha256:70729b46c69b4f1e97c4822c1af3df53a1476cf5ddc6c087c0c10bc3a5678c2f",
+  "manifest": {
+    "artifact_sha256": "af0aa4051bd0e366b45ad60b6cd382c9382c219463b10d797f2ced1f1eb9b126",
+    "files": [
+      {
+        "path": "sample.py",
+        "sha256": "265205ab5503455839b14d00fb35561fa9a7a73e1397199b0256ff4450a8c389",
+        "size": 54
+      }
+    ],
+    "total_bytes": 54,
+    "version": 1
+  },
+  "payload_bytes": 219,
+  "selected_files_only": true
+}

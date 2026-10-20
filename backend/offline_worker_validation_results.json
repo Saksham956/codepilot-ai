@@ -1,0 +1,122 @@
+{
+  "status": "offline_worker_runtime_verified",
+  "image_id": "sha256:a708b1ec2b38a51fc947c5907a61e92a5781d9e9304ab230f37eb1a74520d654",
+  "dependency_lock_sha256": "5fd3ed128ed3bd26c4e0a9aa166f96f218ba7c977579823543472ed4474a4fd4",
+  "runtime": {
+    "prefix": "/opt/worker-venv",
+    "environment": {
+      "python_version": "3.13",
+      "python_full_version": "3.13.16",
+      "implementation_name": "cpython",
+      "implementation_version": "3.13.16",
+      "platform_python_implementation": "CPython",
+      "os_name": "posix",
+      "sys_platform": "linux",
+      "platform_system": "Linux",
+      "platform_machine": "x86_64",
+      "platform_release": "6.6.87.2-microsoft-standard-WSL2",
+      "platform_version": "#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025",
+      "extra": ""
+    },
+    "distributions": [
+      {
+        "name": "urllib3",
+        "version": "2.8.0"
+      },
+      {
+        "name": "iniconfig",
+        "version": "2.3.1"
+      },
+      {
+        "name": "pluggy",
+        "version": "1.7.0"
+      },
+      {
+        "name": "charset-normalizer",
+        "version": "3.5.2"
+      },
+      {
+        "name": "certifi",
+        "version": "2026.10.18"
+      },
+      {
+        "name": "Pygments",
+        "version": "2.21.0"
+      },
+      {
+        "name": "pip",
+        "version": "26.2.1"
+      },
+      {
+        "name": "idna",
+        "version": "3.20"
+      },
+      {
+        "name": "packaging",
+        "version": "26.3"
+      },
+      {
+        "name": "pytest",
+        "version": "8.4.2"
+      }
+    ],
+    "requests_discoverable": false
+  },
+  "actual_runtime_dependency_closure_verified": true,
+  "isolation": {
+    "status": "synthetic_probes_passed",
+    "image_id": "sha256:a708b1ec2b38a51fc947c5907a61e92a5781d9e9304ab230f37eb1a74520d654",
+    "repository_execution_enabled": false,
+    "probes": [
+      {
+        "probe": "permissions",
+        "passed": true,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "oom_killed": false,
+        "outcome": "completed"
+      },
+      {
+        "probe": "scratch_limit",
+        "passed": true,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "oom_killed": false,
+        "outcome": "completed"
+      },
+      {
+        "probe": "process_limit",
+        "passed": true,
+        "cleanup_verified": true,
+        "exit_code": 0,
+        "oom_killed": false,
+        "outcome": "completed"
+      },
+      {
+        "probe": "memory_limit",
+        "passed": true,
+        "cleanup_verified": true,
+        "exit_code": 137,
+        "oom_killed": true,
+        "outcome": "completed"
+      },
+      {
+        "probe": "timeout",
+        "passed": true,
+        "cleanup_verified": true,
+        "outcome": "timeout"
+      },
+      {
+        "probe": "output_limit",
+        "passed": true,
+        "cleanup_verified": true,
+        "outcome": "output_limit_exceeded"
+      }
+    ]
+  },
+  "cleanup_verified": true,
+  "requests_source_executed": false,
+  "repository_execution_enabled": false,
+  "execution_approved": false,
+  "source_import_provenance_observed": false
+}

@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "tests_run": 101,
+  "skipped": [
+    {
+      "test": "test_symlink_file_and_directory (test_safe_patching.SafePatchingTests.test_symlink_file_and_directory)",
+      "reason": "Windows symlink privilege unavailable"
+    }
+  ],
+  "failed_tests": [],
+  "error_tests": [],
+  "suites": [
+    "test_mvp_app",
+    "test_report_job_service",
+    "test_real_worker_ownership",
+    "test_managed_probe_jobs",
+    "test_patch_validator",
+    "test_safe_patching",
+    "test_clone_safety",
+    "test_source_artifact",
+    "test_artifact_materializer",
+    "test_real_requests_smoke",
+    "test_real_auth_assessment",
+    "test_itsdangerous_exercise",
+    "test_dependency_and_provenance"
+  ],
+  "provider_calls": 0,
+  "repository_code_executed": false,
+  "scope": "Trusted controller tests and saved-evidence checks; fresh Docker/profile runs are separate."
+}

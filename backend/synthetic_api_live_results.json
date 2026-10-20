@@ -1,0 +1,52 @@
+{
+  "status": "live_synthetic_api_passed",
+  "jobs": {
+    "baseline": {
+      "job_id": "a8f0c010731347bb94d9e8de552230d2",
+      "profile": "arithmetic-baseline-v1",
+      "status": "completed",
+      "policy_id": "80ba0d6821e334961e239514e8edc1ea5083e09290d567d20ad2366a5d63eba9",
+      "cancel_requested": false,
+      "cleanup_verified": true,
+      "synthetic_passed": false,
+      "tested": false,
+      "repository_execution_enabled": false
+    },
+    "patched": {
+      "job_id": "dbd1548f49cf4fed96edfac5a9539056",
+      "profile": "arithmetic-patched-v1",
+      "status": "completed",
+      "policy_id": "de20f658baf3edd4a01044a2432c9fd4a3afa9f1e610c8da4bc7c7fcccf6ff82",
+      "cancel_requested": false,
+      "cleanup_verified": true,
+      "synthetic_passed": true,
+      "tested": false,
+      "repository_execution_enabled": false
+    },
+    "cancelled": {
+      "job_id": "426503fd6a2241438a5ee578dfa3bbd6",
+      "profile": "cancellation-demo-v1",
+      "status": "cancelled",
+      "policy_id": "8bc28d220652d8faa7279346d274c5abab5817a3c9c8f4e4fde01373b06f2ae6",
+      "cancel_requested": true,
+      "cleanup_verified": true,
+      "synthetic_passed": null,
+      "tested": false,
+      "repository_execution_enabled": false
+    },
+    "restored": {
+      "job_id": "dbd1548f49cf4fed96edfac5a9539056",
+      "profile": "arithmetic-patched-v1",
+      "status": "completed",
+      "policy_id": "de20f658baf3edd4a01044a2432c9fd4a3afa9f1e610c8da4bc7c7fcccf6ff82",
+      "cancel_requested": false,
+      "cleanup_verified": true,
+      "synthetic_passed": true,
+      "tested": false,
+      "repository_execution_enabled": false
+    }
+  },
+  "unauthenticated_rejected": true,
+  "extra_fields_rejected": true,
+  "repository_execution_enabled": false
+}

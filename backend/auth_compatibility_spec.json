@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "repository": "https://github.com/psf/requests",
+  "revision": "b25c87d7cb8d6a18a37fa12442b5f883f9e41741",
+  "purpose": "Compatibility specification; not a repository test result",
+  "credentials_are_synthetic": true,
+  "repository_tests_executed": false,
+  "execution_approved": false,
+  "cases": [
+    {
+      "id": "ascii",
+      "username": {
+        "kind": "str",
+        "value": "Aladdin"
+      },
+      "password": {
+        "kind": "str",
+        "value": "open sesame"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "header",
+        "userpass_hex": "416c616464696e3a6f70656e20736573616d65",
+        "authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+      }
+    },
+    {
+      "id": "latin1_pair",
+      "username": {
+        "kind": "str",
+        "value": "J\u00f6rg"
+      },
+      "password": {
+        "kind": "str",
+        "value": "p\u00e4ss"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "header",
+        "userpass_hex": "4af672673a70e47373",
+        "authorization": "Basic SvZyZzpw5HNz"
+      }
+    },
+    {
+      "id": "opaque_bytes",
+      "username": {
+        "kind": "bytes",
+        "hex": "ff75736572"
+      },
+      "password": {
+        "kind": "bytes",
+        "hex": "807077"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "header",
+        "userpass_hex": "ff757365723a807077",
+        "authorization": "Basic /3VzZXI6gHB3"
+      }
+    },
+    {
+      "id": "str_username_bytes_password",
+      "username": {
+        "kind": "str",
+        "value": "J\u00f6rg"
+      },
+      "password": {
+        "kind": "bytes",
+        "hex": "8081"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "header",
+        "userpass_hex": "4af672673a8081",
+        "authorization": "Basic SvZyZzqAgQ=="
+      }
+    },
+    {
+      "id": "bytes_username_str_password",
+      "username": {
+        "kind": "bytes",
+        "hex": "ff75"
+      },
+      "password": {
+        "kind": "str",
+        "value": "p\u00e4ss"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "header",
+        "userpass_hex": "ff753a70e47373",
+        "authorization": "Basic /3U6cORzcw=="
+      }
+    },
+    {
+      "id": "empty",
+      "username": {
+        "kind": "str",
+        "value": ""
+      },
+      "password": {
+        "kind": "str",
+        "value": ""
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "header",
+        "userpass_hex": "3a",
+        "authorization": "Basic Og=="
+      }
+    },
+    {
+      "id": "colon_in_password",
+      "username": {
+        "kind": "str",
+        "value": "u"
+      },
+      "password": {
+        "kind": "str",
+        "value": "a:b"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "header",
+        "userpass_hex": "753a613a62",
+        "authorization": "Basic dTphOmI="
+      }
+    },
+    {
+      "id": "nonlatin_username_ascii_password",
+      "username": {
+        "kind": "str",
+        "value": "\u7528\u6237"
+      },
+      "password": {
+        "kind": "str",
+        "value": "pw"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "UnicodeEncodeError"
+      }
+    },
+    {
+      "id": "nonlatin_username_latin1_password",
+      "username": {
+        "kind": "str",
+        "value": "\u7528\u6237"
+      },
+      "password": {
+        "kind": "str",
+        "value": "p\u00e4ss"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "UnicodeEncodeError"
+      }
+    },
+    {
+      "id": "latin1_username_nonlatin_password",
+      "username": {
+        "kind": "str",
+        "value": "J\u00f6rg"
+      },
+      "password": {
+        "kind": "str",
+        "value": "\u5bc6\u7801"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "UnicodeEncodeError"
+      }
+    },
+    {
+      "id": "both_nonlatin",
+      "username": {
+        "kind": "str",
+        "value": "\u7528\u6237"
+      },
+      "password": {
+        "kind": "str",
+        "value": "\u5bc6\u7801"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "UnicodeEncodeError"
+      }
+    },
+    {
+      "id": "decomposed_unicode",
+      "username": {
+        "kind": "str",
+        "value": "e\u0301"
+      },
+      "password": {
+        "kind": "str",
+        "value": "pw"
+      },
+      "legacy_expected_by_static_inference": {
+        "outcome": "UnicodeEncodeError"
+      }
+    }
+  ],
+  "future_utf8_review": [
+    "Define explicit caller/server policy for UTF-8; no default encoding change",
+    "Encode the complete string credential pair consistently when a UTF-8 policy is chosen",
+    "Review normalization and credential-domain rules separately",
+    "Preserve opaque bytes and existing Latin-1 headers under the default policy"
+  ],
+  "deferred_cases": [
+    "Colon in username and control-character validation",
+    "Non-string deprecation/warning behavior",
+    "Challenge negotiation, retries, redirects and proxy integration"
+  ]
+}

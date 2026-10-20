@@ -1,0 +1,56 @@
+{
+  "base_image": "sha256:70729b46c69b4f1e97c4822c1af3df53a1476cf5ddc6c087c0c10bc3a5678c2f",
+  "dependency_lock_sha256": "5fd3ed128ed3bd26c4e0a9aa166f96f218ba7c977579823543472ed4474a4fd4",
+  "files": [
+    {
+      "path": ".dockerignore",
+      "sha256": "3cfe72524b8eaaf40143f64a20da198120e2cd011290b3aa8a059fb97fe8347f"
+    },
+    {
+      "path": "Dockerfile",
+      "sha256": "022fae76659c480e1558893642754805a3dc4b8dc465df506fca976b6cc8344c"
+    },
+    {
+      "path": "requirements.lock",
+      "sha256": "7ce6ee2e69026204afac8954ffedbc2d8822d8f66d405f283a2b45bcea23481e"
+    },
+    {
+      "path": "wheels/certifi-2026.10.18-py3-none-any.whl",
+      "sha256": "73191c47aaa79da394e8fee2dbc2ec827432cab56311122c9e47abf79e390f62"
+    },
+    {
+      "path": "wheels/charset_normalizer-3.5.2-py3-none-any.whl",
+      "sha256": "b6b751274acb69d77b3323d6b7dbaa3c7fdfc1eb829b7eb61d262f32e1af9685"
+    },
+    {
+      "path": "wheels/idna-3.20-py3-none-any.whl",
+      "sha256": "ab7ae7122974553370f0bdb919e1a960b2cd1bc1ef0276416d896db81c14582c"
+    },
+    {
+      "path": "wheels/iniconfig-2.3.1-py3-none-any.whl",
+      "sha256": "9121e2c1fdb355232495be3194c8dfe87ccc2d5dee45947b78e68f499790d7a7"
+    },
+    {
+      "path": "wheels/packaging-26.3-py3-none-any.whl",
+      "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c"
+    },
+    {
+      "path": "wheels/pluggy-1.7.0-py3-none-any.whl",
+      "sha256": "7dd7b0d8832ba3cb632c306926ded123429211b83641b35dc5c41ad2d34f9bec"
+    },
+    {
+      "path": "wheels/pygments-2.21.0-py3-none-any.whl",
+      "sha256": "2363c69b61c4a97c838da3b130dcd6468f4848992b21a82f2a63ec34377137d9"
+    },
+    {
+      "path": "wheels/pytest-8.4.2-py3-none-any.whl",
+      "sha256": "872f880de3fc3a5bdc88a11b39c9710c3497a547cfa9320bc3c5e62fbf272e79"
+    },
+    {
+      "path": "wheels/urllib3-2.8.0-py3-none-any.whl",
+      "sha256": "0cf3cae568d36aa9576b28dfb35f11328f1cb974ca7647d9475ebb86c75ac6e3"
+    }
+  ],
+  "repository_files_included": false,
+  "secrets_included": false
+}

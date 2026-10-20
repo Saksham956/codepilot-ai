@@ -1,0 +1,266 @@
+{
+  "status": "specification_consistent",
+  "case_count": 12,
+  "source_revision": "b25c87d7cb8d6a18a37fa12442b5f883f9e41741",
+  "repository_tests_executed": false,
+  "candidate_patch_executed": false,
+  "repository_execution_enabled": false,
+  "patch_approved": false,
+  "basis": "Backend-authored stdlib reference models with synthetic credentials; not an observation of Requests runtime behavior",
+  "cases": [
+    {
+      "id": "ascii",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "header",
+        "userpass_hex": "416c616464696e3a6f70656e20736573616d65",
+        "authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "416c616464696e3a6f70656e20736573616d65",
+        "authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "416c616464696e3a6f70656e20736573616d65",
+        "authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ=="
+      },
+      "unconditional_utf8_changes_existing_header": false,
+      "fallback_changes_exception_to_header": false,
+      "fallback_differs_from_uniform_utf8_for_string_pair": false
+    },
+    {
+      "id": "latin1_pair",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "header",
+        "userpass_hex": "4af672673a70e47373",
+        "authorization": "Basic SvZyZzpw5HNz"
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "4ac3b672673a70c3a47373",
+        "authorization": "Basic SsO2cmc6cMOkc3M="
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "4af672673a70e47373",
+        "authorization": "Basic SvZyZzpw5HNz"
+      },
+      "unconditional_utf8_changes_existing_header": true,
+      "fallback_changes_exception_to_header": false,
+      "fallback_differs_from_uniform_utf8_for_string_pair": false
+    },
+    {
+      "id": "opaque_bytes",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "header",
+        "userpass_hex": "ff757365723a807077",
+        "authorization": "Basic /3VzZXI6gHB3"
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "ff757365723a807077",
+        "authorization": "Basic /3VzZXI6gHB3"
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "ff757365723a807077",
+        "authorization": "Basic /3VzZXI6gHB3"
+      },
+      "unconditional_utf8_changes_existing_header": false,
+      "fallback_changes_exception_to_header": false,
+      "fallback_differs_from_uniform_utf8_for_string_pair": false
+    },
+    {
+      "id": "str_username_bytes_password",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "header",
+        "userpass_hex": "4af672673a8081",
+        "authorization": "Basic SvZyZzqAgQ=="
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "4ac3b672673a8081",
+        "authorization": "Basic SsO2cmc6gIE="
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "4af672673a8081",
+        "authorization": "Basic SvZyZzqAgQ=="
+      },
+      "unconditional_utf8_changes_existing_header": true,
+      "fallback_changes_exception_to_header": false,
+      "fallback_differs_from_uniform_utf8_for_string_pair": false
+    },
+    {
+      "id": "bytes_username_str_password",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "header",
+        "userpass_hex": "ff753a70e47373",
+        "authorization": "Basic /3U6cORzcw=="
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "ff753a70c3a47373",
+        "authorization": "Basic /3U6cMOkc3M="
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "ff753a70e47373",
+        "authorization": "Basic /3U6cORzcw=="
+      },
+      "unconditional_utf8_changes_existing_header": true,
+      "fallback_changes_exception_to_header": false,
+      "fallback_differs_from_uniform_utf8_for_string_pair": false
+    },
+    {
+      "id": "empty",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "header",
+        "userpass_hex": "3a",
+        "authorization": "Basic Og=="
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "3a",
+        "authorization": "Basic Og=="
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "3a",
+        "authorization": "Basic Og=="
+      },
+      "unconditional_utf8_changes_existing_header": false,
+      "fallback_changes_exception_to_header": false,
+      "fallback_differs_from_uniform_utf8_for_string_pair": false
+    },
+    {
+      "id": "colon_in_password",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "header",
+        "userpass_hex": "753a613a62",
+        "authorization": "Basic dTphOmI="
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "753a613a62",
+        "authorization": "Basic dTphOmI="
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "753a613a62",
+        "authorization": "Basic dTphOmI="
+      },
+      "unconditional_utf8_changes_existing_header": false,
+      "fallback_changes_exception_to_header": false,
+      "fallback_differs_from_uniform_utf8_for_string_pair": false
+    },
+    {
+      "id": "nonlatin_username_ascii_password",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "UnicodeEncodeError"
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "e794a8e688b73a7077",
+        "authorization": "Basic 55So5oi3OnB3"
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "e794a8e688b73a7077",
+        "authorization": "Basic 55So5oi3OnB3"
+      },
+      "unconditional_utf8_changes_existing_header": false,
+      "fallback_changes_exception_to_header": true,
+      "fallback_differs_from_uniform_utf8_for_string_pair": false
+    },
+    {
+      "id": "nonlatin_username_latin1_password",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "UnicodeEncodeError"
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "e794a8e688b73a70c3a47373",
+        "authorization": "Basic 55So5oi3OnDDpHNz"
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "e794a8e688b73a70e47373",
+        "authorization": "Basic 55So5oi3OnDkc3M="
+      },
+      "unconditional_utf8_changes_existing_header": false,
+      "fallback_changes_exception_to_header": true,
+      "fallback_differs_from_uniform_utf8_for_string_pair": true
+    },
+    {
+      "id": "latin1_username_nonlatin_password",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "UnicodeEncodeError"
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "4ac3b672673ae5af86e7a081",
+        "authorization": "Basic SsO2cmc65a+G56CB"
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "4af672673ae5af86e7a081",
+        "authorization": "Basic SvZyZzrlr4bnoIE="
+      },
+      "unconditional_utf8_changes_existing_header": false,
+      "fallback_changes_exception_to_header": true,
+      "fallback_differs_from_uniform_utf8_for_string_pair": true
+    },
+    {
+      "id": "both_nonlatin",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "UnicodeEncodeError"
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "e794a8e688b73ae5af86e7a081",
+        "authorization": "Basic 55So5oi3OuWvhueggQ=="
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "e794a8e688b73ae5af86e7a081",
+        "authorization": "Basic 55So5oi3OuWvhueggQ=="
+      },
+      "unconditional_utf8_changes_existing_header": false,
+      "fallback_changes_exception_to_header": true,
+      "fallback_differs_from_uniform_utf8_for_string_pair": false
+    },
+    {
+      "id": "decomposed_unicode",
+      "specified_expectation_matches_reference": true,
+      "legacy_reference": {
+        "outcome": "UnicodeEncodeError"
+      },
+      "unconditional_utf8_reference": {
+        "outcome": "header",
+        "userpass_hex": "65cc813a7077",
+        "authorization": "Basic ZcyBOnB3"
+      },
+      "per_field_fallback_reference": {
+        "outcome": "header",
+        "userpass_hex": "65cc813a7077",
+        "authorization": "Basic ZcyBOnB3"
+      },
+      "unconditional_utf8_changes_existing_header": false,
+      "fallback_changes_exception_to_header": true,
+      "fallback_differs_from_uniform_utf8_for_string_pair": false
+    }
+  ]
+}

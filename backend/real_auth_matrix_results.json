@@ -1,0 +1,199 @@
+{
+  "status": "real_requests_smoke_passed",
+  "revision": "b25c87d7cb8d6a18a37fa12442b5f883f9e41741",
+  "artifact_sha256": "f31134cffb53a184b11ae553107bd4a620a65db9d7a18aebb1e4405137c9ac95",
+  "image_id": "sha256:a708b1ec2b38a51fc947c5907a61e92a5781d9e9304ab230f37eb1a74520d654",
+  "bootstrap_sha256": "66d2456437954a3b50d2529dc77f9460641857780e5d73cfd8afaf977070cbff",
+  "compatibility_spec_sha256": "ffe990da1104cde54240d9feacb285841a114ec7335733f32c509a6bfd067b0c",
+  "source_executed": true,
+  "upstream_tests_executed": false,
+  "patch_applied": false,
+  "production_repository_executor_enabled": false,
+  "cleanup_verified": true,
+  "output_bytes": 3013,
+  "result": {
+    "cases": [
+      {
+        "name": "ascii",
+        "passed": true
+      },
+      {
+        "name": "latin1",
+        "passed": true
+      },
+      {
+        "name": "bytes",
+        "passed": true
+      },
+      {
+        "name": "empty",
+        "passed": true
+      },
+      {
+        "expected_exception": "UnicodeEncodeError",
+        "name": "unicode_username",
+        "passed": true
+      },
+      {
+        "expected_exception": "UnicodeEncodeError",
+        "name": "unicode_password",
+        "passed": true
+      },
+      {
+        "name": "prepared_request_header_without_sending",
+        "passed": true
+      }
+    ],
+    "compatibility_matrix": [
+      {
+        "id": "ascii",
+        "observed": {
+          "authorization": "Basic QWxhZGRpbjpvcGVuIHNlc2FtZQ==",
+          "outcome": "header",
+          "userpass_hex": "416c616464696e3a6f70656e20736573616d65"
+        },
+        "passed": true
+      },
+      {
+        "id": "latin1_pair",
+        "observed": {
+          "authorization": "Basic SvZyZzpw5HNz",
+          "outcome": "header",
+          "userpass_hex": "4af672673a70e47373"
+        },
+        "passed": true
+      },
+      {
+        "id": "opaque_bytes",
+        "observed": {
+          "authorization": "Basic /3VzZXI6gHB3",
+          "outcome": "header",
+          "userpass_hex": "ff757365723a807077"
+        },
+        "passed": true
+      },
+      {
+        "id": "str_username_bytes_password",
+        "observed": {
+          "authorization": "Basic SvZyZzqAgQ==",
+          "outcome": "header",
+          "userpass_hex": "4af672673a8081"
+        },
+        "passed": true
+      },
+      {
+        "id": "bytes_username_str_password",
+        "observed": {
+          "authorization": "Basic /3U6cORzcw==",
+          "outcome": "header",
+          "userpass_hex": "ff753a70e47373"
+        },
+        "passed": true
+      },
+      {
+        "id": "empty",
+        "observed": {
+          "authorization": "Basic Og==",
+          "outcome": "header",
+          "userpass_hex": "3a"
+        },
+        "passed": true
+      },
+      {
+        "id": "colon_in_password",
+        "observed": {
+          "authorization": "Basic dTphOmI=",
+          "outcome": "header",
+          "userpass_hex": "753a613a62"
+        },
+        "passed": true
+      },
+      {
+        "id": "nonlatin_username_ascii_password",
+        "observed": {
+          "outcome": "UnicodeEncodeError"
+        },
+        "passed": true
+      },
+      {
+        "id": "nonlatin_username_latin1_password",
+        "observed": {
+          "outcome": "UnicodeEncodeError"
+        },
+        "passed": true
+      },
+      {
+        "id": "latin1_username_nonlatin_password",
+        "observed": {
+          "outcome": "UnicodeEncodeError"
+        },
+        "passed": true
+      },
+      {
+        "id": "both_nonlatin",
+        "observed": {
+          "outcome": "UnicodeEncodeError"
+        },
+        "passed": true
+      },
+      {
+        "id": "decomposed_unicode",
+        "observed": {
+          "outcome": "UnicodeEncodeError"
+        },
+        "passed": true
+      }
+    ],
+    "loaded_source_modules": [
+      "requests",
+      "requests.__version__",
+      "requests._internal_utils",
+      "requests.adapters",
+      "requests.api",
+      "requests.auth",
+      "requests.certs",
+      "requests.compat",
+      "requests.cookies",
+      "requests.exceptions",
+      "requests.hooks",
+      "requests.models",
+      "requests.packages",
+      "requests.sessions",
+      "requests.status_codes",
+      "requests.structures",
+      "requests.utils"
+    ],
+    "materialization_cleanup_verified": true,
+    "receipt": {
+      "artifact_sha256": "f31134cffb53a184b11ae553107bd4a620a65db9d7a18aebb1e4405137c9ac95",
+      "modules": [
+        {
+          "name": "requests",
+          "origin": "/tmp/codepilot-input-v0zy3kb7/src/requests/__init__.py",
+          "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb"
+        },
+        {
+          "name": "requests.auth",
+          "origin": "/tmp/codepilot-input-v0zy3kb7/src/requests/auth.py",
+          "sha256": "905ef9b6a9cb72d67d31ffe19bd4d9223e1c4169cde6ec51cfca16b31e70991d"
+        }
+      ],
+      "package_paths": [
+        "/tmp/codepilot-input-v0zy3kb7/src/requests"
+      ]
+    },
+    "requests_version": "2.32.5",
+    "worker_root": "/tmp/codepilot-input-v0zy3kb7"
+  },
+  "receipt_check": {
+    "status": "receipt_consistent_not_runtime_verified",
+    "target_modules_consistent": true,
+    "runtime_imports_verified": false,
+    "repository_execution_enabled": false,
+    "checked_modules": [
+      "requests",
+      "requests.auth"
+    ],
+    "checker_imported_repository_code": false
+  }
+}

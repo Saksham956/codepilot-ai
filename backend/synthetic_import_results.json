@@ -1,0 +1,48 @@
+{
+  "status": "synthetic_import_observed",
+  "image_id": "sha256:a708b1ec2b38a51fc947c5907a61e92a5781d9e9304ab230f37eb1a74520d654",
+  "artifact_sha256": "9144f87eb26811d2f3446b7fa7e9efab0437fe1a7e20065b9e5dc0309064e066",
+  "fixture_hashes": {
+    "src/requests/__init__.py": "3cbd3193d7c13f96b3952e0e74e730a268bb23859c23d119453784a79217b6cd",
+    "src/requests/auth.py": "63098273a7aaa630762d6f145dfcf9c61c8c9b290c6ebeb2a05fea5854ccb476"
+  },
+  "observation": {
+    "receipt": {
+      "artifact_sha256": "9144f87eb26811d2f3446b7fa7e9efab0437fe1a7e20065b9e5dc0309064e066",
+      "package_paths": [
+        "/tmp/codepilot-input-7c252h14/src/requests"
+      ],
+      "modules": [
+        {
+          "name": "requests",
+          "origin": "/tmp/codepilot-input-7c252h14/src/requests/__init__.py",
+          "sha256": "3cbd3193d7c13f96b3952e0e74e730a268bb23859c23d119453784a79217b6cd"
+        },
+        {
+          "name": "requests.auth",
+          "origin": "/tmp/codepilot-input-7c252h14/src/requests/auth.py",
+          "sha256": "63098273a7aaa630762d6f145dfcf9c61c8c9b290c6ebeb2a05fea5854ccb476"
+        }
+      ]
+    },
+    "worker_root": "/tmp/codepilot-input-7c252h14",
+    "materialization_cleanup_verified": true
+  },
+  "receipt_check": {
+    "status": "receipt_consistent_not_runtime_verified",
+    "target_modules_consistent": true,
+    "runtime_imports_verified": false,
+    "repository_execution_enabled": false,
+    "checked_modules": [
+      "requests",
+      "requests.auth"
+    ],
+    "checker_imported_repository_code": false
+  },
+  "synthetic_import_observed": true,
+  "host_cleanup_verified": true,
+  "container_cleanup_verified": true,
+  "requests_source_executed": false,
+  "repository_execution_enabled": false,
+  "execution_approved": false
+}

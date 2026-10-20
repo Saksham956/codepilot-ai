@@ -1,0 +1,428 @@
+{
+  "status": "learning_comparison_passed",
+  "repository": "https://github.com/pallets/itsdangerous",
+  "revision": "096c8d42545d3b68ea21a4f890fb2b2d8979c0bd",
+  "worker_image": "sha256:a708b1ec2b38a51fc947c5907a61e92a5781d9e9304ab230f37eb1a74520d654",
+  "upstream_artifact_sha256": "fa57efaa367a3e4c9cb34c5069e49eda83cbbe307e028cef39536159f619483e",
+  "test_nodes": [
+    "tests/test_itsdangerous/test_encoding.py::test_want_bytes",
+    "tests/test_itsdangerous/test_encoding.py::test_base64",
+    "tests/test_itsdangerous/test_encoding.py::test_base64_bad",
+    "tests/test_itsdangerous/test_encoding.py::test_int_bytes"
+  ],
+  "baseline": {
+    "artifact_sha256": "fa57efaa367a3e4c9cb34c5069e49eda83cbbe307e028cef39536159f619483e",
+    "exit_code": 0,
+    "collected": 8,
+    "collection_errors": 0,
+    "passed": 8,
+    "failed": 0,
+    "tests": [
+      {
+        "node": "::test_want_bytes[ma\\xf1ana]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_want_bytes[tomorrow]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_base64[\\u7121\\u9650]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_base64[infinite]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_base64_bad",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[0-]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[192-\\xc0]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[18446744073709551615-\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff]",
+        "phase": "call",
+        "outcome": "passed"
+      }
+    ],
+    "origins": [
+      {
+        "module": "itsdangerous.exc",
+        "origin": "/tmp/codepilot-input-yjzkmvtt/src/itsdangerous/exc.py",
+        "sha256": "46bddec68d0c44511c3d996dc1e7322b5e955756c4d8af7f175f9dfa58dc527e"
+      },
+      {
+        "module": "itsdangerous.encoding",
+        "origin": "/tmp/codepilot-input-yjzkmvtt/src/itsdangerous/encoding.py",
+        "sha256": "c304f3e6aff7ccb71a01dba793afef4a84adc06a9859edf4ed997f53ceda4453"
+      },
+      {
+        "module": "itsdangerous.signer",
+        "origin": "/tmp/codepilot-input-yjzkmvtt/src/itsdangerous/signer.py",
+        "sha256": "60ed0257b341bc703a8f9e3d4441c91548d4a23c36a47ab0714a509d4ef23584"
+      },
+      {
+        "module": "itsdangerous.serializer",
+        "origin": "/tmp/codepilot-input-yjzkmvtt/src/itsdangerous/serializer.py",
+        "sha256": "3e67700032ea912c902d9d2338a0200ec016e24fc7d13940ef5122df3d02e5a2"
+      },
+      {
+        "module": "itsdangerous.timed",
+        "origin": "/tmp/codepilot-input-yjzkmvtt/src/itsdangerous/timed.py",
+        "sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b"
+      },
+      {
+        "module": "itsdangerous._json",
+        "origin": "/tmp/codepilot-input-yjzkmvtt/src/itsdangerous/_json.py",
+        "sha256": "c0f4069a07b6c99f77dbc107285ea069d19ec866022502b1b54fa22ca13a5270"
+      },
+      {
+        "module": "itsdangerous.url_safe",
+        "origin": "/tmp/codepilot-input-yjzkmvtt/src/itsdangerous/url_safe.py",
+        "sha256": "6b3e1ee5f5e2fefb3e61b5a3f186709f8c2254a7de0fef8610a453e547aee0fe"
+      },
+      {
+        "module": "itsdangerous",
+        "origin": "/tmp/codepilot-input-yjzkmvtt/src/itsdangerous/__init__.py",
+        "sha256": "e122bbe6c09edbdc5b460404d5942d3079ca52e65801fddb4a964eadf7f52006"
+      }
+    ],
+    "diagnostic_tail": "........                                                                 [100%]\n8 passed in 0.01s\n",
+    "materialization_cleanup_verified": true,
+    "bootstrap_sha256": "0ab413f75ac2eb05ef60a3d903adc8c28f5816c7b1cbf44770090cc9434e6546",
+    "container_cleanup_verified": true
+  },
+  "baseline_repeat": {
+    "artifact_sha256": "fa57efaa367a3e4c9cb34c5069e49eda83cbbe307e028cef39536159f619483e",
+    "exit_code": 0,
+    "collected": 8,
+    "collection_errors": 0,
+    "passed": 8,
+    "failed": 0,
+    "tests": [
+      {
+        "node": "::test_want_bytes[ma\\xf1ana]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_want_bytes[tomorrow]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_base64[\\u7121\\u9650]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_base64[infinite]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_base64_bad",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[0-]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[192-\\xc0]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[18446744073709551615-\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff]",
+        "phase": "call",
+        "outcome": "passed"
+      }
+    ],
+    "origins": [
+      {
+        "module": "itsdangerous.exc",
+        "origin": "/tmp/codepilot-input-dec6gktx/src/itsdangerous/exc.py",
+        "sha256": "46bddec68d0c44511c3d996dc1e7322b5e955756c4d8af7f175f9dfa58dc527e"
+      },
+      {
+        "module": "itsdangerous.encoding",
+        "origin": "/tmp/codepilot-input-dec6gktx/src/itsdangerous/encoding.py",
+        "sha256": "c304f3e6aff7ccb71a01dba793afef4a84adc06a9859edf4ed997f53ceda4453"
+      },
+      {
+        "module": "itsdangerous.signer",
+        "origin": "/tmp/codepilot-input-dec6gktx/src/itsdangerous/signer.py",
+        "sha256": "60ed0257b341bc703a8f9e3d4441c91548d4a23c36a47ab0714a509d4ef23584"
+      },
+      {
+        "module": "itsdangerous.serializer",
+        "origin": "/tmp/codepilot-input-dec6gktx/src/itsdangerous/serializer.py",
+        "sha256": "3e67700032ea912c902d9d2338a0200ec016e24fc7d13940ef5122df3d02e5a2"
+      },
+      {
+        "module": "itsdangerous.timed",
+        "origin": "/tmp/codepilot-input-dec6gktx/src/itsdangerous/timed.py",
+        "sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b"
+      },
+      {
+        "module": "itsdangerous._json",
+        "origin": "/tmp/codepilot-input-dec6gktx/src/itsdangerous/_json.py",
+        "sha256": "c0f4069a07b6c99f77dbc107285ea069d19ec866022502b1b54fa22ca13a5270"
+      },
+      {
+        "module": "itsdangerous.url_safe",
+        "origin": "/tmp/codepilot-input-dec6gktx/src/itsdangerous/url_safe.py",
+        "sha256": "6b3e1ee5f5e2fefb3e61b5a3f186709f8c2254a7de0fef8610a453e547aee0fe"
+      },
+      {
+        "module": "itsdangerous",
+        "origin": "/tmp/codepilot-input-dec6gktx/src/itsdangerous/__init__.py",
+        "sha256": "e122bbe6c09edbdc5b460404d5942d3079ca52e65801fddb4a964eadf7f52006"
+      }
+    ],
+    "diagnostic_tail": "........                                                                 [100%]\n8 passed in 0.01s\n",
+    "materialization_cleanup_verified": true,
+    "bootstrap_sha256": "0ab413f75ac2eb05ef60a3d903adc8c28f5816c7b1cbf44770090cc9434e6546",
+    "container_cleanup_verified": true
+  },
+  "deliberately_broken": {
+    "artifact_sha256": "580a17b1b7d98dd7f34b6423e22e92cbca451b135a3b4e70288fa5396562648a",
+    "exit_code": 1,
+    "collected": 8,
+    "collection_errors": 0,
+    "passed": 6,
+    "failed": 2,
+    "tests": [
+      {
+        "node": "::test_want_bytes[ma\\xf1ana]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_want_bytes[tomorrow]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_base64[\\u7121\\u9650]",
+        "phase": "call",
+        "outcome": "failed"
+      },
+      {
+        "node": "::test_base64[infinite]",
+        "phase": "call",
+        "outcome": "failed"
+      },
+      {
+        "node": "::test_base64_bad",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[0-]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[192-\\xc0]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[18446744073709551615-\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff]",
+        "phase": "call",
+        "outcome": "passed"
+      }
+    ],
+    "origins": [
+      {
+        "module": "itsdangerous.exc",
+        "origin": "/tmp/codepilot-input-nbrevip_/src/itsdangerous/exc.py",
+        "sha256": "46bddec68d0c44511c3d996dc1e7322b5e955756c4d8af7f175f9dfa58dc527e"
+      },
+      {
+        "module": "itsdangerous.encoding",
+        "origin": "/tmp/codepilot-input-nbrevip_/src/itsdangerous/encoding.py",
+        "sha256": "32c2877f09dabb6b40acba8213b32a3b9cac4993447dd8695d7545a1aa04f29e"
+      },
+      {
+        "module": "itsdangerous.signer",
+        "origin": "/tmp/codepilot-input-nbrevip_/src/itsdangerous/signer.py",
+        "sha256": "60ed0257b341bc703a8f9e3d4441c91548d4a23c36a47ab0714a509d4ef23584"
+      },
+      {
+        "module": "itsdangerous.serializer",
+        "origin": "/tmp/codepilot-input-nbrevip_/src/itsdangerous/serializer.py",
+        "sha256": "3e67700032ea912c902d9d2338a0200ec016e24fc7d13940ef5122df3d02e5a2"
+      },
+      {
+        "module": "itsdangerous.timed",
+        "origin": "/tmp/codepilot-input-nbrevip_/src/itsdangerous/timed.py",
+        "sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b"
+      },
+      {
+        "module": "itsdangerous._json",
+        "origin": "/tmp/codepilot-input-nbrevip_/src/itsdangerous/_json.py",
+        "sha256": "c0f4069a07b6c99f77dbc107285ea069d19ec866022502b1b54fa22ca13a5270"
+      },
+      {
+        "module": "itsdangerous.url_safe",
+        "origin": "/tmp/codepilot-input-nbrevip_/src/itsdangerous/url_safe.py",
+        "sha256": "6b3e1ee5f5e2fefb3e61b5a3f186709f8c2254a7de0fef8610a453e547aee0fe"
+      },
+      {
+        "module": "itsdangerous",
+        "origin": "/tmp/codepilot-input-nbrevip_/src/itsdangerous/__init__.py",
+        "sha256": "e122bbe6c09edbdc5b460404d5942d3079ca52e65801fddb4a964eadf7f52006"
+      }
+    ],
+    "diagnostic_tail": "..FF....                                                                 [100%]\n=================================== FAILURES ===================================\n__________________________ test_base64[\\u7121\\u9650] ___________________________\n\nvalue = '\u7121\u9650'\n\n    @pytest.mark.parametrize(\"value\", (\"\u7121\u9650\", b\"infinite\"))\n    def test_base64(value):\n        enc = base64_encode(value)\n        assert isinstance(enc, bytes)\n        dec = base64_decode(enc)\n>       assert dec == want_bytes(value)\nE       AssertionError: assert b'u\\xe9bm\\xea...e7\\x8ax>n\\xe8' == b'\\xe7\\x84\\xa1\\xe9\\x99\\x90'\nE         \nE         At index 0 diff: b'u' != b'\\xe7'\nE         Use -v to get more diff\n\ncodepilot-input-nbrevip_/tests/test_itsdangerous/test_encoding.py:22: AssertionError\n____________________________ test_base64[infinite] _____________________________\n\nvalue = b'infinite'\n\n    @pytest.mark.parametrize(\"value\", (\"\u7121\u9650\", b\"infinite\"))\n    def test_base64(value):\n        enc = base64_encode(value)\n        assert isinstance(enc, bytes)\n        dec = base64_decode(enc)\n>       assert dec == want_bytes(value)\nE       AssertionError: assert b'u\\xe9bm\\xea...e7\\x8ax>n\\xe8' == b'infinite'\nE         \nE         At index 0 diff: b'u' != b'i'\nE         Use -v to get more diff\n\ncodepilot-input-nbrevip_/tests/test_itsdangerous/test_encoding.py:22: AssertionError\n=========================== short test summary info ============================\nFAILED ../dev::test_base64[\\u7121\\u9650] - AssertionError: assert b'u\\xe9bm\\x...\nFAILED ../dev::test_base64[infinite] - AssertionError: assert b'u\\xe9bm\\xea.....\n2 failed, 6 passed in 0.01s\n",
+    "materialization_cleanup_verified": true,
+    "bootstrap_sha256": "a9820b79071e314467478f47f4974deed942a8b1ebb4aa6b422393e31f41b817",
+    "container_cleanup_verified": true
+  },
+  "repaired": {
+    "artifact_sha256": "fa57efaa367a3e4c9cb34c5069e49eda83cbbe307e028cef39536159f619483e",
+    "exit_code": 0,
+    "collected": 8,
+    "collection_errors": 0,
+    "passed": 8,
+    "failed": 0,
+    "tests": [
+      {
+        "node": "::test_want_bytes[ma\\xf1ana]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_want_bytes[tomorrow]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_base64[\\u7121\\u9650]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_base64[infinite]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_base64_bad",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[0-]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[192-\\xc0]",
+        "phase": "call",
+        "outcome": "passed"
+      },
+      {
+        "node": "::test_int_bytes[18446744073709551615-\\xff\\xff\\xff\\xff\\xff\\xff\\xff\\xff]",
+        "phase": "call",
+        "outcome": "passed"
+      }
+    ],
+    "origins": [
+      {
+        "module": "itsdangerous.exc",
+        "origin": "/tmp/codepilot-input-7m5xmhuu/src/itsdangerous/exc.py",
+        "sha256": "46bddec68d0c44511c3d996dc1e7322b5e955756c4d8af7f175f9dfa58dc527e"
+      },
+      {
+        "module": "itsdangerous.encoding",
+        "origin": "/tmp/codepilot-input-7m5xmhuu/src/itsdangerous/encoding.py",
+        "sha256": "c304f3e6aff7ccb71a01dba793afef4a84adc06a9859edf4ed997f53ceda4453"
+      },
+      {
+        "module": "itsdangerous.signer",
+        "origin": "/tmp/codepilot-input-7m5xmhuu/src/itsdangerous/signer.py",
+        "sha256": "60ed0257b341bc703a8f9e3d4441c91548d4a23c36a47ab0714a509d4ef23584"
+      },
+      {
+        "module": "itsdangerous.serializer",
+        "origin": "/tmp/codepilot-input-7m5xmhuu/src/itsdangerous/serializer.py",
+        "sha256": "3e67700032ea912c902d9d2338a0200ec016e24fc7d13940ef5122df3d02e5a2"
+      },
+      {
+        "module": "itsdangerous.timed",
+        "origin": "/tmp/codepilot-input-7m5xmhuu/src/itsdangerous/timed.py",
+        "sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b"
+      },
+      {
+        "module": "itsdangerous._json",
+        "origin": "/tmp/codepilot-input-7m5xmhuu/src/itsdangerous/_json.py",
+        "sha256": "c0f4069a07b6c99f77dbc107285ea069d19ec866022502b1b54fa22ca13a5270"
+      },
+      {
+        "module": "itsdangerous.url_safe",
+        "origin": "/tmp/codepilot-input-7m5xmhuu/src/itsdangerous/url_safe.py",
+        "sha256": "6b3e1ee5f5e2fefb3e61b5a3f186709f8c2254a7de0fef8610a453e547aee0fe"
+      },
+      {
+        "module": "itsdangerous",
+        "origin": "/tmp/codepilot-input-7m5xmhuu/src/itsdangerous/__init__.py",
+        "sha256": "e122bbe6c09edbdc5b460404d5942d3079ca52e65801fddb4a964eadf7f52006"
+      }
+    ],
+    "diagnostic_tail": "........                                                                 [100%]\n8 passed in 0.01s\n",
+    "materialization_cleanup_verified": true,
+    "bootstrap_sha256": "0ab413f75ac2eb05ef60a3d903adc8c28f5816c7b1cbf44770090cc9434e6546",
+    "container_cleanup_verified": true
+  },
+  "mutation": [
+    {
+      "file": "src/itsdangerous/encoding.py",
+      "original_code": "return base64.urlsafe_b64encode(string).rstrip(b\"=\")",
+      "replacement_code": "return b\"deliberate-learning-bug\""
+    }
+  ],
+  "repair": [
+    {
+      "file": "src/itsdangerous/encoding.py",
+      "original_code": "return b\"deliberate-learning-bug\"",
+      "replacement_code": "return base64.urlsafe_b64encode(string).rstrip(b\"=\")"
+    }
+  ],
+  "patch_validation": {
+    "validation": [
+      {
+        "file": "src/itsdangerous/encoding.py",
+        "valid": true,
+        "syntax_valid": true,
+        "diff": "--- a/src/itsdangerous/encoding.py\n+++ b/src/itsdangerous/encoding.py\n@@ -22,7 +22,7 @@\n     safe to use in URLs.\n     \"\"\"\n     string = want_bytes(string)\n-    return b\"deliberate-learning-bug\"\n+    return base64.urlsafe_b64encode(string).rstrip(b\"=\")\n \n \n def base64_decode(string: str | bytes) -> bytes:\n"
+      }
+    ],
+    "all_valid": true,
+    "applied": true,
+    "tested": false,
+    "application_scope": "temporary_working_copy"
+  },
+  "original_unchanged": true,
+  "scope": "Upstream encoding tests on verified source; deliberately seeded temporary bug and exact restoration. Not an upstream bug fix.",
+  "generic_repository_executor_enabled": false
+}

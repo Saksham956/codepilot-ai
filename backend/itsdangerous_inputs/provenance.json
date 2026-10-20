@@ -1,0 +1,160 @@
+{
+  "repository": "https://github.com/pallets/itsdangerous",
+  "revision": "096c8d42545d3b68ea21a4f890fb2b2d8979c0bd",
+  "tree": "3ff0edaf2d039896397fe8d91d558935a038f823",
+  "artifact_sha256": "fa57efaa367a3e4c9cb34c5069e49eda83cbbe307e028cef39536159f619483e",
+  "files": [
+    {
+      "path": "src/itsdangerous/__init__.py",
+      "sha256": "e122bbe6c09edbdc5b460404d5942d3079ca52e65801fddb4a964eadf7f52006",
+      "git_blob": "ea55256ebd6feed68d8f1c5afedd141df6c7e766",
+      "imports": [
+        "from .encoding import base64_decode as base64_decode",
+        "from .encoding import base64_encode as base64_encode",
+        "from .encoding import want_bytes as want_bytes",
+        "from .exc import BadData as BadData",
+        "from .exc import BadHeader as BadHeader",
+        "from .exc import BadPayload as BadPayload",
+        "from .exc import BadSignature as BadSignature",
+        "from .exc import BadTimeSignature as BadTimeSignature",
+        "from .exc import SignatureExpired as SignatureExpired",
+        "from .serializer import Serializer as Serializer",
+        "from .signer import HMACAlgorithm as HMACAlgorithm",
+        "from .signer import NoneAlgorithm as NoneAlgorithm",
+        "from .signer import Signer as Signer",
+        "from .timed import TimedSerializer as TimedSerializer",
+        "from .timed import TimestampSigner as TimestampSigner",
+        "from .url_safe import URLSafeSerializer as URLSafeSerializer",
+        "from .url_safe import URLSafeTimedSerializer as URLSafeTimedSerializer",
+        "from __future__ import annotations",
+        "import importlib.metadata",
+        "import typing as t",
+        "import warnings"
+      ]
+    },
+    {
+      "path": "src/itsdangerous/_json.py",
+      "sha256": "c0f4069a07b6c99f77dbc107285ea069d19ec866022502b1b54fa22ca13a5270",
+      "git_blob": "fc23feaaff690c477901dc50cc52dd18086051c5",
+      "imports": [
+        "from __future__ import annotations",
+        "import json as _json",
+        "import typing as t"
+      ]
+    },
+    {
+      "path": "src/itsdangerous/encoding.py",
+      "sha256": "c304f3e6aff7ccb71a01dba793afef4a84adc06a9859edf4ed997f53ceda4453",
+      "git_blob": "f5ca80f905c9bb29b993c437a89174e668704658",
+      "imports": [
+        "from .exc import BadData",
+        "from __future__ import annotations",
+        "import base64",
+        "import string",
+        "import struct",
+        "import typing as t"
+      ]
+    },
+    {
+      "path": "src/itsdangerous/exc.py",
+      "sha256": "46bddec68d0c44511c3d996dc1e7322b5e955756c4d8af7f175f9dfa58dc527e",
+      "git_blob": "a75adcd52762458db556111d8b90415e75df7277",
+      "imports": [
+        "from __future__ import annotations",
+        "from datetime import datetime",
+        "import typing as t"
+      ]
+    },
+    {
+      "path": "src/itsdangerous/serializer.py",
+      "sha256": "3e67700032ea912c902d9d2338a0200ec016e24fc7d13940ef5122df3d02e5a2",
+      "git_blob": "5ddf3871d8898c90fabd5bddd8299404e6e7e2f3",
+      "imports": [
+        "from .encoding import want_bytes",
+        "from .exc import BadPayload",
+        "from .exc import BadSignature",
+        "from .signer import Signer",
+        "from .signer import _make_keys_list",
+        "from __future__ import annotations",
+        "import collections.abc as cabc",
+        "import json",
+        "import typing as t",
+        "import typing_extensions as te"
+      ]
+    },
+    {
+      "path": "src/itsdangerous/signer.py",
+      "sha256": "60ed0257b341bc703a8f9e3d4441c91548d4a23c36a47ab0714a509d4ef23584",
+      "git_blob": "e324dc03da90d9002200b68088f501df62777cd6",
+      "imports": [
+        "from .encoding import _base64_alphabet",
+        "from .encoding import base64_decode",
+        "from .encoding import base64_encode",
+        "from .encoding import want_bytes",
+        "from .exc import BadSignature",
+        "from __future__ import annotations",
+        "import collections.abc as cabc",
+        "import hashlib",
+        "import hmac",
+        "import typing as t"
+      ]
+    },
+    {
+      "path": "src/itsdangerous/timed.py",
+      "sha256": "e91bc332a36e9863317f4f8796969974df4f51042646fad01a994a871ba2bd4b",
+      "git_blob": "73843755d90979f750976705c5eaeeb3b98f178c",
+      "imports": [
+        "from .encoding import base64_decode",
+        "from .encoding import base64_encode",
+        "from .encoding import bytes_to_int",
+        "from .encoding import int_to_bytes",
+        "from .encoding import want_bytes",
+        "from .exc import BadSignature",
+        "from .exc import BadTimeSignature",
+        "from .exc import SignatureExpired",
+        "from .serializer import Serializer",
+        "from .serializer import _TSerialized",
+        "from .signer import Signer",
+        "from __future__ import annotations",
+        "from datetime import datetime",
+        "from datetime import timezone",
+        "import collections.abc as cabc",
+        "import time",
+        "import typing as t"
+      ]
+    },
+    {
+      "path": "src/itsdangerous/url_safe.py",
+      "sha256": "6b3e1ee5f5e2fefb3e61b5a3f186709f8c2254a7de0fef8610a453e547aee0fe",
+      "git_blob": "56a0793315a19f24c8385c017a26ec8a9d4c23c3",
+      "imports": [
+        "from ._json import _CompactJSON",
+        "from .encoding import base64_decode",
+        "from .encoding import base64_encode",
+        "from .exc import BadPayload",
+        "from .serializer import Serializer",
+        "from .serializer import _PDataSerializer",
+        "from .timed import TimedSerializer",
+        "from __future__ import annotations",
+        "import typing as t",
+        "import zlib"
+      ]
+    },
+    {
+      "path": "tests/test_itsdangerous/test_encoding.py",
+      "sha256": "af71dbee0825fc8ae947b6c789b05f2331afe60efae2aee5145727446385c3f0",
+      "git_blob": "268367e6b10b33c846beb6c60eeae64ce1c3072d",
+      "imports": [
+        "from itsdangerous.encoding import base64_decode",
+        "from itsdangerous.encoding import base64_encode",
+        "from itsdangerous.encoding import bytes_to_int",
+        "from itsdangerous.encoding import int_to_bytes",
+        "from itsdangerous.encoding import want_bytes",
+        "from itsdangerous.exc import BadData",
+        "import pytest"
+      ]
+    }
+  ],
+  "fixture_policy": "No repository conftest or pytest configuration included. Selected encoding tests use only pytest and package helpers.",
+  "ancestor_conftest_paths": []
+}

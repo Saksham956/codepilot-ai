@@ -1,0 +1,45 @@
+{
+  "status": "synthetic_job_completed",
+  "tested": false,
+  "synthetic_tested": true,
+  "repository_execution_enabled": false,
+  "baseline": {
+    "status": "completed",
+    "cleanup_verified": true,
+    "passed": false,
+    "manifest": {
+      "version": 1,
+      "artifact_sha256": "b5e334f90c470275a67f7fd660b1ec9e97aa29b83c2db3d345553bbe52cdc463",
+      "total_bytes": 46,
+      "files": [
+        {
+          "path": "calculator.py",
+          "size": 46,
+          "sha256": "71bdccb8f575f1049fa00f1fc2ab6ba89d655be178c869ac7c190839e4fe2330"
+        }
+      ]
+    },
+    "materialization_cleanup_verified": true
+  },
+  "patched": {
+    "status": "completed",
+    "cleanup_verified": true,
+    "passed": true,
+    "manifest": {
+      "version": 1,
+      "artifact_sha256": "b7d859ad63a25f8570cc88ccce4e3c7666e0061989810b4641c1f741d54fab78",
+      "total_bytes": 46,
+      "files": [
+        {
+          "path": "calculator.py",
+          "size": 46,
+          "sha256": "63098273a7aaa630762d6f145dfcf9c61c8c9b290c6ebeb2a05fea5854ccb476"
+        }
+      ]
+    },
+    "materialization_cleanup_verified": true
+  },
+  "comparison": "synthetic_failure_to_pass",
+  "host_cleanup_verified": true,
+  "image_id": "sha256:70729b46c69b4f1e97c4822c1af3df53a1476cf5ddc6c087c0c10bc3a5678c2f"
+}

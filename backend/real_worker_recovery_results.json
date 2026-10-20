@@ -1,0 +1,14 @@
+{
+  "status": "real_worker_crash_recovery_verified",
+  "fixture": "fixed trusted sleeper; no repository code",
+  "child_exit_code": 86,
+  "recovered": [
+    {
+      "job_id": "c01fc6fa56494f66b529c7b136927da4",
+      "status": "recovered",
+      "cleanup_verified": true,
+      "repository_execution_enabled": false
+    }
+  ],
+  "cleanup_verified": true
+}

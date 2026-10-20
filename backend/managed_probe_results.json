@@ -1,0 +1,50 @@
+{
+  "status": "managed_checks_passed",
+  "recovery": [],
+  "checks": {
+    "baseline": {
+      "job_id": "bae5ad01bd434461922d0a94c41ba2ba",
+      "status": "completed",
+      "cleanup_verified": true,
+      "output_bytes": 332,
+      "capture_bytes": 332,
+      "repository_execution_enabled": false,
+      "synthetic_passed": false
+    },
+    "patched": {
+      "job_id": "c9ba18492a6a48668a7f4ed0243282ac",
+      "status": "completed",
+      "cleanup_verified": true,
+      "output_bytes": 331,
+      "capture_bytes": 331,
+      "repository_execution_enabled": false,
+      "synthetic_passed": true
+    },
+    "active_cancellation": {
+      "job_id": "f19e91ed173043bea992064aaf498a96",
+      "status": "cancelled",
+      "cleanup_verified": true,
+      "output_bytes": 6,
+      "capture_bytes": 6,
+      "repository_execution_enabled": false
+    },
+    "timeout": {
+      "job_id": "9bcc4ee0d52f40d7b367d296cc2e8d81",
+      "status": "timeout",
+      "cleanup_verified": true,
+      "output_bytes": 6,
+      "capture_bytes": 6,
+      "repository_execution_enabled": false
+    },
+    "output_limit": {
+      "job_id": "f3306dad333f421490018a3e27bba144",
+      "status": "output_limit_exceeded",
+      "cleanup_verified": true,
+      "output_bytes": 1056768,
+      "capture_bytes": 65536,
+      "repository_execution_enabled": false
+    }
+  },
+  "repository_execution_enabled": false,
+  "tested": false
+}

@@ -1,0 +1,11 @@
+{
+  "status": "candidate_lock_verified_offline",
+  "metadata_closure_verified": true,
+  "packages_installed": false,
+  "runtime_image_verified": false,
+  "execution_approved": false,
+  "repository_execution_enabled": false,
+  "package_count": 9,
+  "total_wheel_bytes": 2188752,
+  "dependency_lock_sha256": "5fd3ed128ed3bd26c4e0a9aa166f96f218ba7c977579823543472ed4474a4fd4"
+}

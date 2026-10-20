@@ -1,0 +1,51 @@
+{
+  "status": "synthetic_probes_passed",
+  "image_id": "sha256:70729b46c69b4f1e97c4822c1af3df53a1476cf5ddc6c087c0c10bc3a5678c2f",
+  "repository_execution_enabled": false,
+  "probes": [
+    {
+      "probe": "permissions",
+      "passed": true,
+      "cleanup_verified": true,
+      "exit_code": 0,
+      "oom_killed": false,
+      "outcome": "completed"
+    },
+    {
+      "probe": "scratch_limit",
+      "passed": true,
+      "cleanup_verified": true,
+      "exit_code": 0,
+      "oom_killed": false,
+      "outcome": "completed"
+    },
+    {
+      "probe": "process_limit",
+      "passed": true,
+      "cleanup_verified": true,
+      "exit_code": 0,
+      "oom_killed": false,
+      "outcome": "completed"
+    },
+    {
+      "probe": "memory_limit",
+      "passed": true,
+      "cleanup_verified": true,
+      "exit_code": 137,
+      "oom_killed": true,
+      "outcome": "completed"
+    },
+    {
+      "probe": "timeout",
+      "passed": true,
+      "cleanup_verified": true,
+      "outcome": "timeout"
+    },
+    {
+      "probe": "output_limit",
+      "passed": true,
+      "cleanup_verified": true,
+      "outcome": "output_limit_exceeded"
+    }
+  ]
+}

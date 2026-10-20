@@ -1,0 +1,33 @@
+{
+  "plan_valid": true,
+  "review_status": "not_reviewed",
+  "plan_sha256": "b7e92cde8b10d8c64e1bfa798b3277a394130f3b076cee572c091f2ed10125e8",
+  "execution_status": "execution_disabled",
+  "eligible_for_execution": false,
+  "tested": false,
+  "repository_execution_enabled": false,
+  "blockers": [
+    {
+      "code": "repository_profile_not_reviewed",
+      "message": "No repository execution profile has been approved"
+    },
+    {
+      "code": "source_provenance_unverified",
+      "message": "The artifact is consistent, but its declared commit origin still needs trusted verification"
+    },
+    {
+      "code": "dependency_image_unverified",
+      "message": "Wheel availability, dependency closure, lock contents, and image contents have not been verified"
+    },
+    {
+      "code": "test_collection_not_reviewed",
+      "message": "Test imports, fixtures, hooks, plugins, configuration, and network needs still require review"
+    },
+    {
+      "code": "repository_execution_disabled",
+      "message": "The production repository executor is disabled"
+    }
+  ],
+  "selected_test_count": 1,
+  "dependency_count": 1
+}

@@ -1,0 +1,98 @@
+{
+  "status": "real_requests_smoke_passed",
+  "revision": "b25c87d7cb8d6a18a37fa12442b5f883f9e41741",
+  "artifact_sha256": "f31134cffb53a184b11ae553107bd4a620a65db9d7a18aebb1e4405137c9ac95",
+  "image_id": "sha256:a708b1ec2b38a51fc947c5907a61e92a5781d9e9304ab230f37eb1a74520d654",
+  "bootstrap_sha256": "c9457350cfe546f8e00653b86155cc2167b095cac9a176b777298814ce451c3a",
+  "source_executed": true,
+  "upstream_tests_executed": false,
+  "patch_applied": false,
+  "production_repository_executor_enabled": false,
+  "cleanup_verified": true,
+  "output_bytes": 1407,
+  "result": {
+    "cases": [
+      {
+        "name": "ascii",
+        "passed": true
+      },
+      {
+        "name": "latin1",
+        "passed": true
+      },
+      {
+        "name": "bytes",
+        "passed": true
+      },
+      {
+        "name": "empty",
+        "passed": true
+      },
+      {
+        "expected_exception": "UnicodeEncodeError",
+        "name": "unicode_username",
+        "passed": true
+      },
+      {
+        "expected_exception": "UnicodeEncodeError",
+        "name": "unicode_password",
+        "passed": true
+      },
+      {
+        "name": "prepared_request_header_without_sending",
+        "passed": true
+      }
+    ],
+    "loaded_source_modules": [
+      "requests",
+      "requests.__version__",
+      "requests._internal_utils",
+      "requests.adapters",
+      "requests.api",
+      "requests.auth",
+      "requests.certs",
+      "requests.compat",
+      "requests.cookies",
+      "requests.exceptions",
+      "requests.hooks",
+      "requests.models",
+      "requests.packages",
+      "requests.sessions",
+      "requests.status_codes",
+      "requests.structures",
+      "requests.utils"
+    ],
+    "materialization_cleanup_verified": true,
+    "receipt": {
+      "artifact_sha256": "f31134cffb53a184b11ae553107bd4a620a65db9d7a18aebb1e4405137c9ac95",
+      "modules": [
+        {
+          "name": "requests",
+          "origin": "/tmp/codepilot-input-mpya8xnq/src/requests/__init__.py",
+          "sha256": "e3168011198f0c804fb1ad8fb23a54f6bd3aca8a0afb69992874d90215915adb"
+        },
+        {
+          "name": "requests.auth",
+          "origin": "/tmp/codepilot-input-mpya8xnq/src/requests/auth.py",
+          "sha256": "905ef9b6a9cb72d67d31ffe19bd4d9223e1c4169cde6ec51cfca16b31e70991d"
+        }
+      ],
+      "package_paths": [
+        "/tmp/codepilot-input-mpya8xnq/src/requests"
+      ]
+    },
+    "requests_version": "2.32.5",
+    "worker_root": "/tmp/codepilot-input-mpya8xnq"
+  },
+  "receipt_check": {
+    "status": "receipt_consistent_not_runtime_verified",
+    "target_modules_consistent": true,
+    "runtime_imports_verified": false,
+    "repository_execution_enabled": false,
+    "checked_modules": [
+      "requests",
+      "requests.auth"
+    ],
+    "checker_imported_repository_code": false
+  }
+}

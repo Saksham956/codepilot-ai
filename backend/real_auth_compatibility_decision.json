@@ -1,0 +1,19 @@
+{
+  "status": "compatibility_assessed",
+  "baseline_cases_observed": 12,
+  "unconditional_utf8_changes_existing_headers": [
+    "latin1_pair",
+    "str_username_bytes_password",
+    "bytes_username_str_password"
+  ],
+  "per_field_fallback_mixed_encoding_cases": [
+    "nonlatin_username_latin1_password",
+    "latin1_username_nonlatin_password"
+  ],
+  "decision": "retain_default_latin1_and_opaque_bytes",
+  "proposed_fallback_approved": false,
+  "candidate_patch_executed": false,
+  "candidate_comparison_basis": "backend reference models, not patched Requests execution",
+  "next_supported_direction": "explicit caller-selected UTF-8 bytes when the target server encoding is known; no automatic fallback",
+  "production_repository_executor_enabled": false
+}
